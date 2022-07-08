@@ -1,8 +1,8 @@
-﻿using AdventOfCode.Challenges;
+﻿using AdventOfCode2021.Puzzles;
 using System;
 using Xunit;
 
-namespace Tests.Challenges.Day02
+namespace AdventOfCode2021.Puzzles.Tests.Day02
 {
     public class InstructionTests
     {

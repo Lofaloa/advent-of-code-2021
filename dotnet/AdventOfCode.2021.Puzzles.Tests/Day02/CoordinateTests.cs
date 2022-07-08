@@ -1,7 +1,6 @@
-﻿using AdventOfCode.Challenges;
-using Xunit;
+﻿using Xunit;
 
-namespace Tests.Challenges.Day02
+namespace AdventOfCode2021.Puzzles.Tests.Day02
 {
     public class CoordinateTests
     {

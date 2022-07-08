@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.Challenges
+﻿namespace AdventOfCode2021.Puzzles
 {
     public struct Instruction
     {

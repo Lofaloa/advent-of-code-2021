@@ -1,6 +1,6 @@
 ﻿using AdventOfCode.Console.Core;
 
-namespace AdventOfCode.Challenges
+namespace AdventOfCode2021.Puzzles
 {
     public partial class DiveChallenge : Puzzle
     {

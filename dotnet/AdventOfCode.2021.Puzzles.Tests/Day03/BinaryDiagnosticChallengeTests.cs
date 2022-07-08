@@ -1,8 +1,8 @@
-﻿using AdventOfCode.Challenges;
+﻿using AdventOfCode2021.Puzzles;
 using System;
 using Xunit;
 
-namespace Tests.Challenges.Day03
+namespace AdventOfCode2021.Puzzles.Tests.Day03
 {
     public class BinaryDiagnosticChallengeTests
     {

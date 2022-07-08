@@ -1,5 +1,5 @@
 ﻿
-using AdventOfCode.Challenges;
+using AdventOfCode2021.Puzzles;
 using AdventOfCode.Console;
 
 namespace AdventOfCode

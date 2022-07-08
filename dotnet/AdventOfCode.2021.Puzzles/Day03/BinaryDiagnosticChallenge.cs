@@ -1,8 +1,7 @@
 ﻿using AdventOfCode.Console.Core;
-using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace AdventOfCode.Challenges
+namespace AdventOfCode2021.Puzzles
 {
     public class BinaryDiagnosticChallenge : Puzzle
     {
