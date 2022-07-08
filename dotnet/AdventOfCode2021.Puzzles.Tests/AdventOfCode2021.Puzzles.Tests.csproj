@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AdventOfCode.2021.Puzzles\AdventOfCode.2021.Puzzles.csproj" />
+    <ProjectReference Include="..\AdventOfCode2021.Puzzles\AdventOfCode2021.Puzzles.csproj" />
   </ItemGroup>
 
 </Project>
