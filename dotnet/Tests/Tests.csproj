@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,19 +6,6 @@
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Resources\CompleteDayPage.html" />
-    <None Remove="Resources\NotStartedDayPage.html" />
-    <None Remove="Resources\VeryCompleteDayPage.html" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\CalendarPage.html" />
-    <EmbeddedResource Include="Resources\CompleteDayPage.html" />
-    <EmbeddedResource Include="Resources\NotStartedDayPage.html" />
-    <EmbeddedResource Include="Resources\VeryCompleteDayPage.html" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="coverlet.msbuild" Version="3.1.2">
@@ -40,22 +27,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Challenges\Challenges.csproj" />
-    <ProjectReference Include="..\CommandLineInterface\CommandLineInterface.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Properties\Resources.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
 
 </Project>

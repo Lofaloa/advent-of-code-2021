@@ -48,9 +48,13 @@ namespace AdventOfCode.Challenges
             return CountDepthIncrements(sums);
         }
 
-        public override IEnumerable<Answer> Run(string[] lines) => new List<Answer> { 
-            new Answer(CountDepthIncrements(lines), "measurement increments"),
-            new Answer(CountDepthIncrements(lines, 3), "windowed increments")
-        };
+        public override (Answer First, Answer Second) Run(string[] lines)
+        {
+            return (
+                new() { Description = "depth increments", Value = CountDepthIncrements(lines) },
+                new() { Description = "windowed increments", Value = CountDepthIncrements(lines, 3) }
+            );
+        }
+
     }
 }

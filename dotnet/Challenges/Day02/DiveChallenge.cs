@@ -15,16 +15,17 @@ namespace AdventOfCode.Challenges
             return current;
         }
 
-        public override IEnumerable<Answer> Run(string[] lines)
+        public override (Answer First, Answer Second) Run(string[] lines)
         {
             ICoordinate coordinate = new Coordinate(0, 0);
             ICoordinate submarineCoordinate = new SubmarineCoordinate(0, 0, 0);
             coordinate = FollowInstructionsFrom(coordinate, lines);
             submarineCoordinate = FollowInstructionsFrom(submarineCoordinate, lines);
-            return new List<Answer> {
-                new Answer(coordinate.X * coordinate.Y, "simplistic instructions"),
-                new Answer(submarineCoordinate.X * submarineCoordinate.Y, "submarine instructions")
-            };
+            return (
+                new() { Description = "simplistic instructions", Value = coordinate.X * coordinate.Y },
+                new() { Description = "submarine instructions", Value = submarineCoordinate.X * submarineCoordinate.Y }
+            );
         }
+
     }
 }

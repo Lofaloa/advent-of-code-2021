@@ -1,20 +1,11 @@
 ﻿using AdventOfCode.Console.Core;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace AdventOfCode.Challenges
 {
     public class BinaryDiagnosticChallenge : Puzzle
     {
-        public override IEnumerable<Answer> Run(string[] lines)
-        {
-            int powerConsumption = DecodePowerConsumption(lines);
-            int oxygenGeneratorRating = DecodeOxygenGeneratorRating(lines);
-            int co2ScrubberRating = DecodeCO2ScrubberRating(lines);
-            return new List<Answer> {
-                new Answer(powerConsumption, "power consumption"),
-                new Answer(oxygenGeneratorRating * co2ScrubberRating, "oxygen generator rating multiplied by the CO2 scrubber rating")
-            };
-        }
 
         public static string DecodeGammaRateFrom(string[] diagnosticReport)
         {
@@ -117,6 +108,15 @@ namespace AdventOfCode.Challenges
             return sb.ToString();
         }
 
-
+        public override (Answer First, Answer Second) Run(string[] lines)
+        {
+            int powerConsumption = DecodePowerConsumption(lines);
+            int oxygenGeneratorRating = DecodeOxygenGeneratorRating(lines);
+            int co2ScrubberRating = DecodeCO2ScrubberRating(lines);
+            return (
+                new() { Description = "power consumption", Value = powerConsumption },
+                new() { Description = "oxygen generator rating multiplied by the CO2 scrubber rating", Value = oxygenGeneratorRating * co2ScrubberRating }
+            );
+        }
     }
 }

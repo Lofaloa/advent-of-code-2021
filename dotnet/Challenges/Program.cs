@@ -8,7 +8,7 @@ namespace AdventOfCode
     {
         public static void Main(string[] args)
         {
-            var app = AdventOfCodeApplication.Instance;
+            var app = AdventOfCodeConsole.Instance;
 
             app.StartYear(2021, year => {
                 year.Submit<SonarSweepChallenge>().ForDay(1);
